@@ -221,6 +221,119 @@
       </tr>
     </tfoot>
   </table>
+
+  <h1>Forms</h1>
+  <p>
+    Traditionally, the term 'form' has referred
+    to a printed document that contains
+    spaces for you to fill in information.
+  </p>
+
+  <p>
+    HTML borrows the concept of a form to refer to different
+    elements that allow you to collect information from visitors to
+    the site.
+  </p>
+  <h1>Text input</h1>
+  <form action="http://httpbin.org/get" method="get">
+    <p>Post some data
+      <br />
+      <label>
+        Username:
+        <input type="text" name="username" size="15" maxlength="30" required="true" />
+      </label>
+    <p>
+
+    <p>
+      <label for="password_input"> <!-- this label is for the passwod input-->
+        Password:
+      </label>
+      <input id="password_input" type="password" name="password" size="15" maxlength="30" />
+    </p>
+    <input type="submit" value="Submit" />
+  </form>
+
+  <form action="http://httpbin.org/post" method="post">
+    <p>What did you think of this</p>
+    <textarea name="comments" cols="20" rows="10">
+      enter your comments
+    </textarea>
+    <input type="submit" value="Submit" />
+    <br />
+
+    <input id="rock_genre" type="radio" name="genre" value="rock" checked="checked" />
+    <label for="rock_genre">Rock</label>
+
+    <input id="pop_genre" type="radio" name="genre" value="pop" checked="checked" />
+    <label for="pop_genre">Pop</label>
+
+    <input id="jazz_genre" type="radio" name="genre" value="jazz" checked="checked" />
+    <label for="jazz_genre">Jazz</label>
+
+    <input type="submit" value="Submit" />
+  </form>
+
+  <form action="http://httpbin.org/post" method="post">
+    <p>Please select your favorite music service(s):
+      <br />
+      <input type="checkbox" name="service" value="itunes" checked="checked" /> iTunes
+      <input type="checkbox" name="service" value="lastfm" /> Last.fm
+      <input type="checkbox" name="service" value="spotify" /> Spotify
+    </p>
+    <input type="submit" value="Submit" />
+  </form>
+
+  <form action="http://httpbin.org/post" method="post">
+    <p>What device do you listen to music on?</p>
+    <select name="devices">
+      <option value="ipod">iPod</option>
+      <option value="radio">Radio</option>
+      <option value="computer">Computer</option>
+    </select>
+    <input type="submit" value="Submit" />
+  </form>
+
+  <form action="http://httpbin.org/post" method="post">
+    <p>Upload your song in MP3 format:</p>
+    <input type="file" name="user-song" /><br />
+    <input type="submit" value="Upload" />
+  </form>
+
+  <form action="http://httpbin.org/post" method="post">
+    <label for="username">Departure date:</label>
+    <input type="date" name="depart" />
+    <input type="submit" value="Submit" />
+  </form>
+
+
+  <form action="http://httpbin.org/post" method="post">
+    <button><img src="images/test.png" alt="add" width="10" height="10" />
+      Add</button><!-- button with text and image-->
+    <input type="hidden" name="bookmark" value="lyrics" />
+  </form>
+
+  <!-- labelling form -->
+  <label>Email:<br />
+    <input type="text" name="email" />
+  </label>
+
+  <!-- grouping form -->
+  <fieldset>
+    <legend>Contact details</legend>
+    <label>Email:<br />
+      <input type="text" name="email" />
+    </label>
+    <br />
+    <label>Mobile:<br />
+      <input type="text" name="phone" />
+    </label>
+    <br />
+    <label>Telephone:<br />
+      <input type="text" name="telephone" />
+    </label>
+
+  </fieldset>
+
 </body>
 
 </html>
