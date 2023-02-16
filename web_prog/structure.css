@@ -4,8 +4,15 @@ body {
     
 h1 {
     color: rgb(255, 255, 255 );
+    font-family: 'Cascadia Mono', monospace;
+    font-size: 350%; /* 150 percent of the default font size of the browser; px or ems can also be used */
+    font-weight: bold;
 }
 
 #top_headline {
     color: aqua;
+    font-style: oblique;
+    text-transform: uppercase;
+    text-decoration: wavy;
+    text-shadow:rgb(185, 179, 175);
 }
